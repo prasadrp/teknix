@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | Teknix — Authorised Service Center Kollam</title>
-  <meta name="description" content="View the Teknix service center, workshop facilities, and customer support in High School Jn, Kollam.">
-  <link rel="icon" href="images/teknix-logo.png" type="image/png">
+  <title>Gallery | Teknix - The Technology Destination | Kollam</title>
+  <meta name="description" content="View photographs of Teknix service workstations, micro-soldering labs, printer repair benches, network cabling projects, and POS retail installations in Kollam.">
+  <link rel="icon" type="image/png" href="images/lgotek.png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- TOP BAR -->
+  <!-- TOP ANNOUNCEMENT BAR (CLEAN, TIDY & RESPONSIVE) -->
   <div class="top-bar">
     <div class="container">
       <div class="top-bar-left">
@@ -22,7 +20,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
           </svg>
-          <a href="https://maps.app.goo.gl/BwHeQLVbWqw4kqsV6" target="_blank" rel="noopener">49/380, Palakassery Building, High School Jn, Kollam</a>
+          <a href="https://maps.app.goo.gl/BwHeQLVbWqw4kqsV6" target="_blank" rel="noopener">49/380, High School Jn, Kollam</a>
         </div>
         <div class="top-item">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -55,9 +53,9 @@
 
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
           <li><a href="services.html" class="nav-link">Services</a></li>
-          <li><a href="downloads.html" class="nav-link">Downloads</a></li>
+          <li><a href="amc.html" class="nav-link">AMC Plans</a></li>
           <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -79,87 +77,248 @@
   <!-- PAGE HERO -->
   <section class="page-hero">
     <div class="container">
-      <h1 class="page-hero-title reveal">Gallery</h1>
-      <div class="breadcrumb-nav reveal delay-1">
+      <h1 class="page-hero-title reveal">Facility & Project Gallery</h1>
+      <p class="page-hero-desc reveal delay-1">Take a look inside our repair workstations, component diagnostic labs, and enterprise networking setups across Kollam.</p>
+      <div class="breadcrumb-nav reveal delay-2">
         <a href="index.html">Home</a> &gt; <span>Gallery</span>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY GRID -->
-  <section class="section-pad">
+  <!-- GALLERY GRID & LIGHTBOX SHOWCASE -->
+  <section class="section-pad" style="background: var(--bg-surface-alt);">
     <div class="container">
-      <div class="gallery-grid" id="galleryGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-        
-        <div class="gallery-card reveal-up" data-gallery-index="0">
-          <img src="images/gallery/gallery1.jpg" alt="Teknix Service Facility" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Service Center</span>
-            <h4 class="gallery-title">Teknix Front Counter &amp; Customer Lounge</h4>
+      <div class="section-head reveal">
+        <span class="badge badge-purple">Official Facilities & Workbenches</span>
+        <h2 class="section-title">Teknix Infrastructure in Action</h2>
+        <p class="section-desc">Authentic glimpses inside our Canon Authorised Service Hub, dedicated printer testing benches, chip-level logic board labs, and customer care reception at High School Junction, Kollam.</p>
+      </div>
+
+      <!-- FILTER CONTROLS -->
+      <div class="gallery-filter-bar reveal delay-1">
+        <button type="button" class="gallery-filter-btn active" data-filter="all">All Photos (9)</button>
+        <button type="button" class="gallery-filter-btn" data-filter="printer">Printer Bench & Spares (2)</button>
+        <button type="button" class="gallery-filter-btn" data-filter="store">Store Front & Reception (4)</button>
+        <button type="button" class="gallery-filter-btn" data-filter="hardware">Hardware & Logic Board Labs (2)</button>
+        <button type="button" class="gallery-filter-btn" data-filter="milestone">Inauguration (1)</button>
+      </div>
+
+      <!-- 9 AUTHENTIC GALLERY CARDS -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- PHOTO 1: MAIN ENTRANCE -->
+        <div class="gallery-card reveal delay-1" data-cat="store" 
+             data-lightbox-src="images/gallery/gallery1.jpg"
+             data-lightbox-title="Teknix Technology Destination - Main Entrance"
+             data-lightbox-desc="Official Canon Authorised Service Centre facade with customer intake and express service counter at High School Junction, Kollam."
+             data-lightbox-cat="Store & Facility">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Authorised Center</span>
+            <img src="images/gallery/gallery1.jpg" alt="Teknix Main Entrance" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Teknix Technology Destination Entrance</h3>
+            <p class="gallery-desc">Canon Authorised Service Centre intake facade with express desk counter.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up delay-1" data-gallery-index="1">
-          <img src="images/gallery/gallery2.jpg" alt="Printer Diagnosis" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Diagnostics</span>
-            <h4 class="gallery-title">Authorised Printer Diagnostic Bench</h4>
+        <!-- PHOTO 2: INAUGURATION -->
+        <div class="gallery-card reveal delay-2" data-cat="milestone"
+             data-lightbox-src="images/gallery/gallery2.jpg"
+             data-lightbox-title="Inauguration of Expanded Teknix Service Hub"
+             data-lightbox-desc="Grand ribbon-cutting ceremony marking the expansion of Teknix's multi-brand IT, POS & printer engineering facilities in Kollam."
+             data-lightbox-cat="Milestone">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Milestone</span>
+            <img src="images/gallery/gallery2.jpg" alt="Inauguration Ceremony" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Inauguration of Expanded Center</h3>
+            <p class="gallery-desc">Ribbon-cutting ceremony launching our modern service facilities.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up delay-2" data-gallery-index="2">
-          <img src="images/gallery/gallery3.png" alt="Chip Level Lab" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Motherboard Repair</span>
-            <h4 class="gallery-title">Precision Soldering &amp; Chip-Level Workstation</h4>
+        <!-- PHOTO 3: BUILDING FACADE -->
+        <div class="gallery-card reveal delay-3" data-cat="store"
+             data-lightbox-src="images/gallery/gallery3.png"
+             data-lightbox-title="Palakassery Building Campus Frontage"
+             data-lightbox-desc="Full architectural exterior view showing official Canon Service Centre, CP PLUS & EsyPOS branding at High School Junction, Kollam."
+             data-lightbox-cat="Building Campus">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Canon Hub</span>
+            <img src="images/gallery/gallery3.png" alt="Building Campus Frontage" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Palakassery Building Campus Frontage</h3>
+            <p class="gallery-desc">Exterior view featuring Canon, CP PLUS, and EsyPOS authorized signboards.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up" data-gallery-index="3">
-          <img src="images/gallery/gallery4.jpg" alt="Laptop Repair" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Computer Repair</span>
-            <h4 class="gallery-title">Laptop Screen &amp; Hardware Assembly</h4>
+        <!-- PHOTO 4: CUSTOMER RECEPTION -->
+        <div class="gallery-card reveal delay-1" data-cat="store"
+             data-lightbox-src="images/gallery/gallery4.jpg"
+             data-lightbox-title="Customer Reception & Service Intake Desk"
+             data-lightbox-desc="Modern air-conditioned reception area with job-sheet issuing desk, token system, and warranty certification displays."
+             data-lightbox-cat="Reception">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Front Office</span>
+            <img src="images/gallery/gallery4.jpg" alt="Customer Reception Desk" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Customer Reception & Intake Counter</h3>
+            <p class="gallery-desc">Front office desk with immediate diagnostic intake and ticket issuance.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up delay-1" data-gallery-index="4">
-          <img src="images/gallery/gallery5.jpg" alt="Printer Mechanism Repair" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Printer Repair</span>
-            <h4 class="gallery-title">Printhead &amp; Paper Feed Roller Servicing</h4>
+        <!-- PHOTO 5: WAITING LOUNGE & PRINTER SALES -->
+        <div class="gallery-card reveal delay-2" data-cat="store"
+             data-lightbox-src="images/gallery/gallery5.jpg"
+             data-lightbox-title="Visitor Waiting Lounge & Printer Display"
+             data-lightbox-desc="Comfortable customer seating area with retail display showcase of Canon Pixma ink-tank printers and genuine consumables."
+             data-lightbox-cat="Lounge & Sales">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Printer Sales</span>
+            <img src="images/gallery/gallery5.jpg" alt="Visitor Lounge and Printer Shelf" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Client Waiting Lounge & Printer Display</h3>
+            <p class="gallery-desc">Comfortable visitor lounge featuring retail Canon Pixma printers.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up delay-2" data-gallery-index="5">
-          <img src="images/gallery/gallery6.jpg" alt="Spare Parts Inventory" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Spare Parts</span>
-            <h4 class="gallery-title">Original Printer &amp; Laptop Spare Parts</h4>
+        <!-- PHOTO 6: OEM SPARES INVENTORY -->
+        <div class="gallery-card reveal delay-3" data-cat="printer"
+             data-lightbox-src="images/gallery/gallery6.jpg"
+             data-lightbox-title="OEM Spares Inventory & Dispatch Depot"
+             data-lightbox-desc="Dedicated racks of 100% genuine Canon OEM spare boxes, printer logic boards, ink cartridges, and customer delivery logs."
+             data-lightbox-cat="Genuine Spares">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Canon OEM Spares</span>
+            <img src="images/gallery/gallery6.jpg" alt="Canon OEM Spares Inventory" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">OEM Spares Inventory & Dispatch Depot</h3>
+            <p class="gallery-desc">Well-stocked inventory of authentic Canon and Brother printer parts.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up" data-gallery-index="6">
-          <img src="images/gallery/gallery7.jpg" alt="Network Equipment Testing" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Networking</span>
-            <h4 class="gallery-title">Structured Cabling &amp; Switch Rack Assembly</h4>
+        <!-- PHOTO 7: CHIP-LEVEL LAPTOP LAB -->
+        <div class="gallery-card reveal delay-1" data-cat="hardware"
+             data-lightbox-src="images/gallery/gallery7.jpg"
+             data-lightbox-title="Chip-Level Laptop Motherboard Workstation"
+             data-lightbox-desc="ESD-protected diagnostic workstation equipped for micro-soldering, BGA chipset rework, and testing of laptops and Apple Macs."
+             data-lightbox-cat="Chip-Level Lab">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">BGA Diagnostics</span>
+            <img src="images/gallery/gallery7.jpg" alt="Chip-level Diagnostic Workstation" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">Chip-Level Laptop Motherboard Cabin</h3>
+            <p class="gallery-desc">Precision micro-soldering bench for logic boards and power circuitry.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up delay-1" data-gallery-index="7">
-          <img src="images/gallery/gallery8.jpg" alt="Quality Inspection" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Quality Check</span>
-            <h4 class="gallery-title">Post-Repair Rigorous Printing &amp; Stress Test</h4>
+        <!-- PHOTO 8: DEDICATED PRINTER SERVICE BENCH -->
+        <div class="gallery-card reveal delay-2" data-cat="printer" style="border: 2px solid var(--brand-purple);"
+             data-lightbox-src="images/gallery/gallery8.jpg"
+             data-lightbox-title="Dedicated Printer Overhaul & Refill Bench (#1 Priority)"
+             data-lightbox-desc="Certified printer technicians actively dismantling, ultrasonic printhead cleaning, and calibrating Canon & HP laser printer assemblies."
+             data-lightbox-cat="★ #1 Printer Bench">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill" style="background: var(--brand-purple); color: #fff;">★ #1 Printer Hub</span>
+            <img src="images/gallery/gallery8.jpg" alt="Dedicated Printer Service Bench" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title" style="color: var(--brand-purple);">Dedicated Printer Overhaul Bench</h3>
+            <p class="gallery-desc">Engineers performing ultrasonic head clearing and laser printer servicing.</p>
           </div>
         </div>
 
-        <div class="gallery-card reveal-up delay-2" data-gallery-index="8">
-          <img src="images/gallery/gallery9.jpg" alt="Store Entrance" class="gallery-thumb" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">Facility</span>
-            <h4 class="gallery-title">High School Junction Kollam Service Hub</h4>
+        <!-- PHOTO 9: SYSTEM ASSEMBLY & STAGING LAB -->
+        <div class="gallery-card reveal delay-3" data-cat="hardware"
+             data-lightbox-src="images/gallery/gallery9.jpg"
+             data-lightbox-title="System Assembly, POS & Equipment Staging Lab"
+             data-lightbox-desc="Workstations for custom desktop assembly, EsyPOS thermal bill printer calibration, and corporate client batch staging."
+             data-lightbox-cat="Staging Lab">
+          <div class="gallery-img-wrap">
+            <span class="gallery-tag-pill">Equipment Staging</span>
+            <img src="images/gallery/gallery9.jpg" alt="System Assembly and Staging Lab" class="gallery-img" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-badge">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                </svg>
+                View Photo
+              </span>
+            </div>
+          </div>
+          <div class="gallery-caption">
+            <h3 class="gallery-title">System Assembly & Staging Lab</h3>
+            <p class="gallery-desc">Custom PC builds, POS calibration bench, and corporate equipment testing.</p>
           </div>
         </div>
 
@@ -167,142 +326,143 @@
     </div>
   </section>
 
-  <!-- QUICK CTA BANNER -->
-  <section class="cta-banner">
-    <div class="container cta-banner-inner">
-      <div class="cta-banner-text">
-        <h2 class="cta-banner-title">Quick, reliable, and affordable gadget repairs</h2>
-        <p class="cta-banner-desc">We’re passionate about keeping your gadgets in top shape. Our dedicated team of experienced technicians combines technical expertise with exceptional customer service to provide reliable repairs for all your electronic devices.</p>
+  <!-- FULL-SCREEN LIGHTBOX MODAL -->
+  <div id="galleryLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      <div class="lightbox-top-bar">
+        <div class="lightbox-info">
+          <span class="lightbox-counter" id="lightboxCounter">Photo 1 of 9</span>
+          <span class="lightbox-cat-badge" id="lightboxCatBadge">Store & Facility</span>
+        </div>
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
       </div>
-      <div class="cta-banner-actions">
-        <a href="contact.html" class="btn btn-light btn-lg">Book a Repair</a>
+
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous Photo">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+
+        <div class="lightbox-image-wrap">
+          <img src="" alt="" id="lightboxImg" class="lightbox-img">
+        </div>
+
+        <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Next Photo">
+          <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="lightbox-caption-bar">
+        <h3 id="lightboxTitle" class="lightbox-title"></h3>
+        <p id="lightboxDesc" class="lightbox-desc"></p>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <img src="images/teknix-logo.png" alt="Teknix Logo" class="footer-logo">
-        <p class="footer-desc">
-          We’re passionate about keeping your gadgets in top shape. Our dedicated team of experienced technicians combines technical expertise with exceptional customer service to provide reliable repairs for all your electronic devices.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-title">Company</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="downloads.html">Downloads</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-title">Our Services</h4>
-        <ul class="footer-links">
-          <li><a href="services.html">Computer &amp; Laptop</a></li>
-          <li><a href="services.html">Printer Repair</a></li>
-          <li><a href="services.html">Quality Support</a></li>
-          <li><a href="services.html">Game Console</a></li>
-          <li><a href="services.html">Software Repair</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4 class="footer-title">Location &amp; Hours</h4>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.8rem;">
-          <strong>Location:</strong><br>
-          49/380, Palakassery Building,<br>
-          Kottamukku Road, High School Jn,<br>
-          Cutchery P.O, Kollam - 691013
-        </p>
-        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.8rem;">
-          <strong>We're Open:</strong><br>
-          Monday - Saturday 08.00 - 6.00
-        </p>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">
-          <strong>Send a Message:</strong><br>
-          <a href="mailto:teknixkollam@gmail.com" style="color: var(--brand-purple-light);">teknixkollam@gmail.com</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>&copy; 2024 All Right Reserved. Teknix</p>
-        <div class="footer-bottom-phones">
-          <a href="tel:04742748888">0474 2748888</a> &bull;
-          <a href="tel:8943294838">+91 89432 94838</a> &bull;
-          <a href="tel:9447342015">+91 94473 42015</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo-wrap" style="margin-bottom: 1.2rem; background: #ffffff; padding: 0.6rem 1rem; border-radius: var(--radius-sm); display: inline-block;">
+            <img src="images/teknix-logo.png" alt="Teknix" style="height: 38px;">
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.4rem;">
+            South Kerala's premier technology destination for chip-level laptop & desktop servicing, printer repairs, enterprise structured cabling, and retail POS solutions.
+          </p>
         </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="amc.html">AMC Plans</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links-list">
+            <a href="services.html">Computer & Laptop Repairs</a>
+            <a href="services.html">Canon & Brother Printer Service</a>
+            <a href="services.html">Structured Cabling & Wi-Fi</a>
+            <a href="services.html">EsyPOS Billing Systems</a>
+            <a href="amc.html">Annual Maintenance Contracts</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Center</h4>
+          <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.8rem;">
+            49/380, Palakassery Building,<br>
+            High School Junction, Kollam,<br>
+            Kerala 691009, India
+          </p>
+          <p style="font-size: 0.9rem; color: #ffffff; font-weight: 600;">
+            ☎ 0474 2748888<br>
+            📱 +91 89432 94838 / +91 94473 42015
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Teknix - The Technology Destination. All Rights Reserved.</div>
+        <div>Authorised Service Center • High School Jn, Kollam</div>
       </div>
     </div>
   </footer>
 
-  <!-- LIGHTBOX MODAL -->
-  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&larr;</button>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&rarr;</button>
-    <div class="lightbox-stage">
-      <img src="" alt="Enlarged gallery photo" id="lightboxImg" class="lightbox-image">
-      <div class="lightbox-caption" id="lightboxCaption"></div>
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Book a Service or Pickup</h3>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="modalBookingForm" class="quick-form">
+          <div class="form-group">
+            <label for="modalServiceInput" class="form-label">Service Required</label>
+            <input type="text" id="modalServiceInput" class="form-control" value="Hardware Service" required>
+          </div>
+          <div class="form-group">
+            <label for="modalNameInput" class="form-label">Your Full Name</label>
+            <input type="text" id="modalNameInput" class="form-control" placeholder="e.g. Arun Nair" required>
+          </div>
+          <div class="form-group">
+            <label for="modalPhoneInput" class="form-label">Contact / WhatsApp Number</label>
+            <input type="tel" id="modalPhoneInput" class="form-control" placeholder="e.g. 9447342015" required pattern="[0-9]{10}">
+          </div>
+          <div class="form-group">
+            <label for="modalNotesInput" class="form-label">Problem Description or Address (for Pickup)</label>
+            <textarea id="modalNotesInput" class="form-control" rows="3" placeholder="Tell us about the issue or specify doorstep pickup address in Kollam"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+            Confirm & Send via WhatsApp
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a href="https://wa.me/918943294838?text=Hello%20Teknix%20Kollam,%20I%20would%20like%20to%20enquire%20about%20your%20services." 
-     class="floating-whatsapp" 
-     target="_blank" 
-     rel="noopener" 
-     aria-label="Chat on WhatsApp">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.697c.969.57 2.015.867 3.206.867 3.179 0 5.765-2.586 5.765-5.766 0-3.18-2.586-5.766-5.765-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.53-.49-5.005-1.341l-4.995 1.403 1.353-4.937c-.902-1.503-1.422-3.26-1.422-5.125 0-5.514 4.486-10 10-10s10 4.486 10 10z"/>
+  <a href="https://wa.me/918943294838" class="floating-whatsapp" target="_blank" rel="noopener">
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
     </svg>
   </a>
 
-  <!-- MODAL FOR BOOKING -->
-  <div class="modal-overlay" id="bookingModal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3 class="modal-title">Book a Service</h3>
-        <button class="modal-close" id="closeModal">&times;</button>
-      </div>
-      <form id="modalBookingForm" class="quick-form">
-        <div class="form-group">
-          <label class="form-label" for="mbName">Full Name</label>
-          <input type="text" id="mbName" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="mbPhone">Phone / WhatsApp Number</label>
-          <input type="tel" id="mbPhone" class="form-control" placeholder="e.g. 9447342015" required pattern="[0-9]{10}">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="mbService">Service Needed</label>
-          <select id="mbService" class="form-control">
-            <option value="Computer,Laptop Sale and Service">Computer, Laptop Sale and Service</option>
-            <option value="All types of printer sales and service">All types of printer sales and service</option>
-            <option value="Structured cabling and networking">Structured cabling and networking</option>
-            <option value="AMC,ASC">AMC, ASC</option>
-            <option value="Billing Softwares">Billing Softwares</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="mbDetails">Problem Description / Notes</label>
-          <textarea id="mbDetails" class="form-control" rows="3" placeholder="Describe the service you need..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-          Submit Service Request
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
