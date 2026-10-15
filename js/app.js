@@ -47,7 +47,7 @@ function highlightActiveNavLink() {
 
 // 3. SCROLL ENTRANCE ANIMATIONS (IntersectionObserver)
 function initScrollAnimations() {
-  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-up');
   if (!reveals.length) return;
 
   const observerOptions = {
@@ -233,7 +233,7 @@ function initRepairEstimator() {
 function initBookingModal() {
   const modal = document.getElementById('bookingModal');
   const openBtns = document.querySelectorAll('.open-booking-modal');
-  const closeBtn = document.getElementById('closeModalBtn');
+  const closeBtns = modal.querySelectorAll('.modal-close, #closeModal, #closeModalBtn');
   const bookingForm = document.getElementById('modalBookingForm');
 
   if (!modal) return;
@@ -242,7 +242,7 @@ function initBookingModal() {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const serviceName = btn.getAttribute('data-service-prefill') || '';
-      const serviceField = document.getElementById('modalServiceInput');
+      const serviceField = document.getElementById('modalServiceInput') || document.getElementById('mbService');
       if (serviceField && serviceName) {
         serviceField.value = serviceName;
       }
@@ -251,12 +251,12 @@ function initBookingModal() {
     });
   });
 
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => {
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
       modal.classList.remove('open');
       document.body.style.overflow = '';
     });
-  }
+  });
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
@@ -268,10 +268,10 @@ function initBookingModal() {
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('modalNameInput').value;
-      const phone = document.getElementById('modalPhoneInput').value;
-      const service = document.getElementById('modalServiceInput').value;
-      const notes = document.getElementById('modalNotesInput')?.value || 'Quick service request';
+      const name = document.getElementById('modalNameInput')?.value || document.getElementById('mbName')?.value || 'Customer';
+      const phone = document.getElementById('modalPhoneInput')?.value || document.getElementById('mbPhone')?.value || '';
+      const service = document.getElementById('modalServiceInput')?.value || document.getElementById('mbService')?.value || 'General Service';
+      const notes = document.getElementById('modalNotesInput')?.value || document.getElementById('mbDetails')?.value || 'Service request';
 
       const refNo = 'TKX-' + Math.floor(100000 + Math.random() * 900000);
 
